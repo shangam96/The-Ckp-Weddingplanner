@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>The CKP Wedding Planner | Muskurahate Aapki Sajawate Hamari</title>
+
+<meta name="description" content="The CKP Wedding Planner - Wedding Planning, Haldi, Mehendi, Reception, Birthday & Anniversary Decoration.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#fffdf8;
+color:#333;
+line-height:1.6;
+}
+
+header{
+
+background:linear-gradient(135deg,#5b0f17,#8b1e2d);
+
+color:white;
+
+padding:20px 8%;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:999;
+
+box-shadow:0 5px 15px rgba(0,0,0,.25);
+
+}
+
+.logo{
+
+font-family:'Cinzel',serif;
+
+font-size:28px;
+
+font-weight:bold;
+
+color:#FFD700;
+
+}
+
+.logo span{
+
+display:block;
+
+font-size:13px;
+
+font-family:Poppins;
+
+font-weight:400;
+
+color:white;
+
+}
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:30px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:white;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#FFD700;
+
+}
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+padding:20px;
+
+background:
+
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+
+url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80');
+
+background-size:cover;
+
+background-position:center;
+
+color:white;
+
+}
+
+.hero h1{
+
+font-family:'Cinzel',serif;
+
+font-size:60px;
+
+margin-bottom:15px;
+
+}
+
+.hero h2{
+
+font-size:24px;
+
+color:#FFD700;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:18px;
+
+margin-bottom:35px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:#FFD700;
+
+color:#5b0f17;
+
+text-decoration:none;
+
+font-weight:600;
+
+border-radius:40px;
+
+margin:10px;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:white;
+
+transform:translateY(-4px);
+
+}
+
+.section{
+
+padding:100px 10%;
+
+}
+
+.title{
+
+text-align:center;
+
+font-family:'Cinzel';
+
+font-size:38px;
+
+color:#5b0f17;
+
+margin-bottom:20px;
+
+}
+
+.subtitle{
+
+text-align:center;
+
+max-width:800px;
+
+margin:auto;
+
+margin-bottom:50px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+text-align:center;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card i{
+
+font-size:45px;
+
+color:#8b1e2d;
+
+margin-bottom:20px;
+
+}
+
+.whatsapp{
+
+position:fixed;
+
+bottom:20px;
+
+right:20px;
+
+background:#25D366;
+
+width:65px;
+
+height:65px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+border-radius:50%;
+
+color:white;
+
+font-size:30px;
+
+text-decoration:none;
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+z-index:999;
+
+}
+
+.lang{
+
+position:fixed;
+
+top:90px;
+
+right:20px;
+
+background:white;
+
+padding:10px 15px;
+
+border-radius:30px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+cursor:pointer;
+
+font-weight:bold;
+
+}
+
+@media(max-width:768px){
+
+header{
+
+flex-direction:column;
+
+}
+
+nav ul{
+
+gap:15px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+margin-top:10px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero h2{
+
+font-size:18px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="lang" onclick="changeLang()">
+
+English | हिन्दी
+
+</div>
+
+<header>
+
+<div class="logo">
+
+🌸 CKP
+
+<span>The CKP Wedding Planner</span>
+
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1 id="heroTitle">The CKP Wedding Planner</h1>
+
+<h2 id="tagline">
+
+Muskurahate Aapki, Sajawate Hamari
+
+</h2>
+
+<p id="heroText">
+
+Creating memorable weddings and celebrations with love, creativity and care. From Haldi to Reception, we make every moment beautiful.
+
+</p>
+
+<a href="https://wa.me/919234333971" class="btn">
+
+<i class="fab fa-whatsapp"></i>
+
+Book on WhatsApp
+
+</a>
+
+<a href="https://instagram.com/theckpweddingplanner"
+
+class="btn">
+
+<i class="fab fa-instagram"></i>
+
+Instagram
+
+</a>
+
+</div>
+
+</section><!-- ================= ABOUT ================= -->
+
+<section class="section" id="about">
+
+<h2 class="title">About Us</h2>
+
+<p class="subtitle" id="aboutText">
+
+The CKP Wedding Planner is dedicated to making your special occasions unforgettable.
+We believe every celebration deserves thoughtful planning, beautiful decoration,
+and a personal touch. Whether it's a wedding, haldi, mehendi, reception, birthday,
+or anniversary, we work with passion and creativity to bring your vision to life.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fas fa-heart"></i>
+
+<h3>Our Mission</h3>
+
+<p>
+
+To create memorable celebrations filled with happiness, elegance and beautiful moments.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-users"></i>
+
+<h3>Our Promise</h3>
+
+<p>
+
+Every family is important to us. We plan each event with care,
+dedication and complete transparency.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-star"></i>
+
+<h3>Our Vision</h3>
+
+<p>
+
+To become the most trusted wedding planner in our region through
+quality work and customer satisfaction.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section" id="services" style="background:#fff8ef;">
+
+<h2 class="title">Our Services</h2>
+
+<p class="subtitle">
+
+We provide complete planning and decoration services for all kinds of celebrations.
+
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fas fa-ring"></i>
+
+<h3>Wedding Planning</h3>
+
+<p>
+
+Complete planning from engagement to reception.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-spa"></i>
+
+<h3>Haldi Decoration</h3>
+
+<p>
+
+Beautiful floral themes and traditional decoration.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-leaf"></i>
+
+<h3>Mehendi Setup</h3>
+
+<p>
+
+Creative colourful Mehendi decorations.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-music"></i>
+
+<h3>Sangeet Night</h3>
+
+<p>
+
+Lighting, stage setup and entertainment arrangements.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-crown"></i>
+
+<h3>Reception</h3>
+
+<p>
+
+Elegant reception stage and venue decoration.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-camera"></i>
+
+<h3>Photography</h3>
+
+<p>
+
+Photography and videography coordination.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-birthday-cake"></i>
+
+<h3>Birthday Events</h3>
+
+<p>
+
+Theme decorations for birthdays and kids' parties.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-glass-cheers"></i>
+
+<h3>Anniversary</h3>
+
+<p>
+
+Celebrate your special day with elegant decoration.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="section">
+
+<h2 class="title">Why Choose The CKP Wedding Planner?</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fas fa-handshake"></i>
+
+<h3>Friendly Support</h3>
+
+<p>
+
+We treat every client like family and listen carefully to your needs.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-wallet"></i>
+
+<h3>Affordable Solutions</h3>
+
+<p>
+
+Beautiful decorations and planning that fit your requirements.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-clock"></i>
+
+<h3>On-Time Execution</h3>
+
+<p>
+
+Every event is completed on schedule with proper planning.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fas fa-palette"></i>
+
+<h3>Creative Decoration</h3>
+
+<p>
+
+Fresh ideas and elegant themes for every celebration.
+
+</p>
+
+</div>
+
+</div>
+
+</section><!-- ================= GALLERY ================= -->
+
+<section class="section" id="gallery" style="background:#fffdf8;">
+
+<h2 class="title">Our Inspiration</h2>
+
+<p class="subtitle">
+Every beautiful celebration starts with an idea. As we begin our journey, this section reflects the style and elegance we aim to bring to your special day.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<i class="fas fa-seedling"></i>
+<h3>Floral Decoration</h3>
+<p>Elegant floral themes for weddings, Haldi and Mehendi ceremonies.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-champagne-glasses"></i>
+<h3>Reception Setup</h3>
+<p>Beautiful stage designs, lighting and memorable reception décor.</p>
+</div>
+
+<div class="card">
+<i class="fas fa-gifts"></i>
+<h3>Creative Celebrations</h3>
+<p>Birthdays, anniversaries and family events with thoughtful decoration.</p>
+</div>
+
+</div>
+
+<br><br>
+
+<p style="text-align:center;font-style:italic;color:#777;">
+📸 Our real event gallery will be updated soon as we begin creating unforgettable memories with our clients.
+</p>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="section" id="contact" style="background:#5b0f17;color:white;">
+
+<h2 class="title" style="color:#FFD700;">
+Contact Us
+</h2>
+
+<p class="subtitle" style="color:white;">
+We would love to be a part of your special celebration.
+Contact us today and let's start planning together.
+</p>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fas fa-phone" style="color:#5b0f17;"></i>
+
+<h3>Call Us</h3>
+
+<p>
++91 92343 33971
+</p>
+
+<br>
+
+<a class="btn"
+href="tel:+919234333971">
+
+Call Now
+
+</a>
+
+</div>
+
+<div class="card">
+
+<i class="fab fa-whatsapp" style="color:#25D366;"></i>
+
+<h3>WhatsApp</h3>
+
+<p>
+
+Quick Booking & Enquiry
+
+</p>
+
+<br>
+
+<a class="btn"
+
+href="https://wa.me/919234333971">
+
+Message Now
+
+</a>
+
+</div>
+
+<div class="card">
+
+<i class="fab fa-instagram" style="color:#E1306C;"></i>
+
+<h3>Instagram</h3>
+
+<p>
+
+@theckpweddingplanner
+
+</p>
+
+<br>
+
+<a class="btn"
+
+href="https://instagram.com/theckpweddingplanner"
+
+target="_blank">
+
+Follow Us
+
+</a>
+
+</div>
+
+</div>
+
+<br><br>
+
+<div style="text-align:center;">
+
+<h3>📍 Business Address</h3>
+
+<p>
+
+RLY Colony<br>
+
+Near Mahatma Gandhi Park<br>
+
+CKP
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Floating WhatsApp -->
+
+<a class="whatsapp"
+
+href="https://wa.me/919234333971"
+
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- ================= FOOTER ================= -->
+
+<footer style="background:#3c0910;color:white;text-align:center;padding:40px 20px;">
+
+<h2 style="font-family:Cinzel;color:#FFD700;">
+🌸 THE CKP Wedding Planner
+</h2>
+
+<p style="margin-top:10px;">
+Muskurahate Aapki, Sajawate Hamari
+</p>
+
+<br>
+
+<p>
+
+Creating memorable weddings and celebrations with creativity, care and dedication.
+
+</p>
+
+<br>
+
+<p>
+
+© 2026 The CKP Wedding Planner
+
+</p>
+
+<p>
+
+Designed with ❤️ for beautiful celebrations.
+
+</p>
+
+</footer><script>
+
+// ================= LANGUAGE TOGGLE =================
+
+let hindi = false;
+
+function changeLang(){
+
+hindi = !hindi;
+
+if(hindi){
+
+document.getElementById("heroTitle").innerHTML =
+"द CKP वेडिंग प्लानर";
+
+document.getElementById("tagline").innerHTML =
+"मुस्कुराहटें आपकी, सजावटें हमारी";
+
+document.getElementById("heroText").innerHTML =
+"हल्दी से लेकर रिसेप्शन तक, हम आपकी हर खुशी को खूबसूरती और पूरी लगन के साथ यादगार बनाने का प्रयास करते हैं।";
+
+document.getElementById("aboutText").innerHTML =
+"द CKP वेडिंग प्लानर का उद्देश्य आपकी हर खुशी को यादगार बनाना है। शादी, हल्दी, मेहंदी, संगीत, रिसेप्शन, जन्मदिन और सालगिरह जैसे हर खास अवसर को हम पूरी जिम्मेदारी और रचनात्मकता के साथ सजाते हैं।";
+
+}else{
+
+document.getElementById("heroTitle").innerHTML =
+"The CKP Wedding Planner";
+
+document.getElementById("tagline").innerHTML =
+"Muskurahate Aapki, Sajawate Hamari";
+
+document.getElementById("heroText").innerHTML =
+"Creating memorable weddings and celebrations with love, creativity and care. From Haldi to Reception, we make every moment beautiful.";
+
+document.getElementById("aboutText").innerHTML =
+"The CKP Wedding Planner is dedicated to making your special occasions unforgettable. We believe every celebration deserves thoughtful planning, beautiful decoration, and a personal touch. Whether it's a wedding, haldi, mehendi, reception, birthday, or anniversary, we work with passion and creativity to bring your vision to life.";
+
+}
+
+}
+
+// ================= SIMPLE FADE ANIMATION =================
+
+const observer = new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+
+entry.target.style.transform="translateY(0px)";
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".card").forEach(card=>{
+
+card.style.opacity="0";
+
+card.style.transform="translateY(40px)";
+
+card.style.transition="all .8s ease";
+
+observer.observe(card);
+
+});
+
+// ================= NAVBAR SHADOW =================
+
+window.addEventListener("scroll",()=>{
+
+const header=document.querySelector("header");
+
+if(window.scrollY>50){
+
+header.style.background="#5b0f17";
+
+header.style.boxShadow="0 8px 20px rgba(0,0,0,.35)";
+
+}else{
+
+header.style.background="linear-gradient(135deg,#5b0f17,#8b1e2d)";
+
+header.style.boxShadow="0 5px 15px rgba(0,0,0,.25)";
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
