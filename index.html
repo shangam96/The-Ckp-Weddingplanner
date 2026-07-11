@@ -1,21 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>The CKP Wedding Planner | मुस्कुराहटें आपकी, सजावटें हमारी</title>
-
-<meta name="description"
-content="Wedding Planning | Haldi | Mehendi | Reception | Birthday | Anniversary | The CKP Wedding Planner">
+<title>The CKP Wedding Planner</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cinzel:wght@500;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
 
 <style>
 
@@ -27,352 +22,257 @@ scroll-behavior:smooth;
 }
 
 body{
+
 font-family:'Poppins',sans-serif;
-background:#fffdf8;
-color:#333;
-line-height:1.6;
+background:#FFF8EF;
+color:#2d2d2d;
+overflow-x:hidden;
+
 }
+
+/*=========================
+COLOR VARIABLES
+==========================*/
+
+:root{
+
+--maroon:#7B1023;
+--gold:#D4AF37;
+--cream:#FFF8EF;
+--dark:#2E2A27;
+
+}
+
+/*=========================
+HEADER
+==========================*/
 
 header{
 
-background:linear-gradient(135deg,#5b0f17,#8b1e2d);
-
-color:white;
-
-padding:20px 8%;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
 position:fixed;
-
 top:0;
-
 left:0;
-
 width:100%;
-
-z-index:999;
-
-box-shadow:0 5px 15px rgba(0,0,0,.25);
+height:90px;
+background:rgba(123,16,35,.97);
+backdrop-filter:blur(10px);
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 60px;
+z-index:9999;
+box-shadow:0 5px 20px rgba(0,0,0,.2);
 
 }
+
+/*=========================
+LOGO
+==========================*/
 
 .logo{
 
-font-size:30px;
-
-font-weight:bold;
-
-color:#FFD700;
-
-letter-spacing:2px;
-
-font-family:'Poppins',sans-serif;
-
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+flex:1;
 
 }
 
-.logo span{
-
-display:block;
-
-font-size:13px;
-
-font-family:Poppins;
-
-font-weight:400;
-
-color:white;
-
-letter-spacing:1px;
-
-margin-top:4px;
-
-}
-
-nav ul{
+.logo-main{
 
 display:flex;
+align-items:center;
+justify-content:center;
+gap:18px;
 
-list-style:none;
+}
 
-gap:30px;
+.logo-main span{
+
+font-family:'Cinzel',serif;
+font-size:36px;
+font-weight:700;
+letter-spacing:5px;
+color:#FFD700;
+
+}
+
+.flower{
+
+font-size:24px;
+color:#FFD700;
+
+}
+
+.logo-sub{
+
+font-size:15px;
+margin-top:4px;
+letter-spacing:2px;
+font-family:'Cinzel',serif;
+color:white;
+
+}
+
+/*=========================
+NAVIGATION
+==========================*/
+
+nav{
+
+display:flex;
+gap:35px;
 
 }
 
 nav a{
 
 text-decoration:none;
-
 color:white;
-
+font-size:15px;
 font-weight:500;
-
 transition:.3s;
 
 }
 
 nav a:hover{
 
-color:#FFD700;
+color:var(--gold);
 
 }
 
-.hero{
+/*=========================
+LANGUAGE SWITCH
+==========================*/
 
-height:100vh;
+.language{
 
 display:flex;
-
+gap:10px;
 align-items:center;
 
-justify-content:center;
+}
 
-text-align:center;
+.language button{
 
-padding:20px;
+background:transparent;
+border:1px solid var(--gold);
+padding:7px 15px;
+border-radius:30px;
+cursor:pointer;
+color:white;
+font-size:13px;
+transition:.3s;
 
-background:
+}
 
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+.language button:hover{
 
-url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=80');
+background:var(--gold);
+color:#7B1023;
 
-background-size:cover;
+}
 
-background-position:center;
+/*=========================
+MOBILE MENU
+==========================*/
 
+.menu-btn{
+
+display:none;
+font-size:34px;
+cursor:pointer;
 color:white;
 
 }
 
-.hero h1{
-
-font-family:'Cinzel',serif;
-
-font-size:60px;
-
-margin-bottom:15px;
-
-}
-
-.hero h2{
-
-font-size:24px;
-
-color:#FFD700;
-
-margin-bottom:20px;
-
-}
-
-.hero p{
-
-max-width:750px;
-
-margin:auto;
-
-font-size:18px;
-
-margin-bottom:35px;
-
-line-height:1.8;
-
-}
-
-.btn{
-
-display:inline-block;
-
-padding:15px 35px;
-
-background:#FFD700;
-
-color:#5b0f17;
-
-text-decoration:none;
-
-font-weight:600;
-
-border-radius:40px;
-
-margin:10px;
-
-transition:.3s;
-
-}
-
-.btn:hover{
-
-background:white;
-
-transform:translateY(-4px);
-
-}
-
-.section{
-
-padding:100px 10%;
-
-}
-
-.title{
-
-text-align:center;
-
-font-family:'Cinzel';
-
-font-size:38px;
-
-color:#5b0f17;
-
-margin-bottom:20px;
-
-}
-
-.subtitle{
-
-text-align:center;
-
-max-width:800px;
-
-margin:auto;
-
-margin-bottom:50px;
-
-}
-
-.cards{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:30px;
-
-}
-
-.card{
-
-background:white;
-
-padding:30px;
-
-border-radius:15px;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
-transition:.3s;
-
-text-align:center;
-
-}
-
-.card:hover{
-
-transform:translateY(-10px);
-
-}
-
-.card i{
-
-font-size:45px;
-
-color:#8b1e2d;
-
-margin-bottom:20px;
-
-}
-
-.whatsapp{
+.mobile-menu{
 
 position:fixed;
-
-bottom:20px;
-
-right:20px;
-
-background:#25D366;
-
-width:65px;
-
-height:65px;
-
+top:90px;
+left:-100%;
+width:100%;
+height:100vh;
+background:#7B1023;
 display:flex;
-
-justify-content:center;
-
+flex-direction:column;
 align-items:center;
-
-border-radius:50%;
-
-color:white;
-
-font-size:30px;
-
-text-decoration:none;
-
-box-shadow:0 10px 25px rgba(0,0,0,.3);
-
+padding-top:50px;
+transition:.4s;
 z-index:999;
 
 }
 
-.lang{
+.mobile-menu.active{
 
-position:fixed;
-
-top:90px;
-
-right:20px;
-
-background:white;
-
-padding:10px 15px;
-
-border-radius:30px;
-
-box-shadow:0 5px 15px rgba(0,0,0,.2);
-
-cursor:pointer;
-
-font-weight:bold;
+left:0;
 
 }
 
-@media(max-width:768px){
+.mobile-menu a{
+
+text-decoration:none;
+color:white;
+font-size:20px;
+margin:18px 0;
+transition:.3s;
+
+}
+
+.mobile-menu a:hover{
+
+color:gold;
+
+}
+
+/*=========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
 
 header{
 
-flex-direction:column;
+padding:0 20px;
+height:80px;
 
 }
 
-nav ul{
+nav{
 
-gap:15px;
-
-flex-wrap:wrap;
-
-justify-content:center;
-
-margin-top:10px;
+display:none;
 
 }
 
-.hero h1{
+.language{
 
-font-size:38px;
+display:none;
 
 }
 
-.hero h2{
+.menu-btn{
 
-font-size:20px;
+display:block;
+
+}
+
+.logo-main span{
+
+font-size:28px;
+
+}
+
+.logo-sub{
+
+font-size:12px;
+
+}
+
+.mobile-menu{
+
+top:80px;
 
 }
 
@@ -384,74 +284,908 @@ font-size:20px;
 
 <body>
 
-<div class="lang" onclick="changeLang()">
-
-English | हिन्दी
-
-</div>
-
 <header>
 
 <div class="logo">
 
-  ❀ CKP ❀
+<div class="logo-main">
 
+<span class="flower">✿</span>
 
-  
-<span>The CKP Wedding Planner</span>
+<span>CKP</span>
+
+<span class="flower">✿</span>
+
+</div>
+
+<div class="logo-sub">
+
+The CKP Wedding Planner
+
+</div>
 
 </div>
 
 <nav>
 
-<ul>
+<a href="#home">Home</a>
 
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#contact">Contact</a></li>
+<a href="#about">About</a>
 
-</ul>
+<a href="#services">Services</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
 
 </nav>
 
+<div class="language">
+
+<button id="englishBtn">English</button>
+
+<button id="hindiBtn">हिन्दी</button>
+
+</div>
+
+<div class="menu-btn" onclick="openMenu()">
+
+☰
+
+</div>
+
 </header>
 
-<section class="hero" id="home">
+<div class="mobile-menu" id="mobileMenu">
 
-<div>
+<a href="#home">Home</a>
 
-<h1 id="heroTitle">
+<a href="#about">About</a>
 
-The CKP Wedding Planner
+<a href="#services">Services</a>
+
+<a href="#gallery">Gallery</a>
+
+<a href="#contact">Contact</a>
+
+<hr style="width:80%;margin:30px 0;border:.5px solid #b88a1b;">
+
+<a href="#" id="mobileEnglish">🇬🇧 English</a>
+
+<a href="#" id="mobileHindi">🇮🇳 हिन्दी</a>
+
+</div><!-- =========================
+HERO SECTION
+========================= -->
+
+<section id="home" class="hero">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<p class="welcome">
+Welcome to
+</p>
+
+<h1 class="hero-logo">
+
+<span class="flower">✿</span>
+
+CKP
+
+<span class="flower">✿</span>
 
 </h1>
 
-<h2 id="tagline">
+<h2 class="hero-title">
 
-मुस्कुराहटें आपकी, सजावटें हमारी
+The CKP Wedding Planner
 
 </h2>
 
-<p id="heroText">
+<div class="divider"></div>
 
-Creating memorable weddings and celebrations with love, creativity and care.
-From Haldi to Reception, we make every moment beautiful—beautifully planned and affordably priced.
+<p class="hero-hindi">
+
+"मुस्कुराहटें आपकी,<br>
+
+सजावटें हमारी"
 
 </p>
 
-<a href="https://wa.me/919234333971" class="btn">
+<p class="hero-text">
 
-<i class="fab fa-whatsapp"></i>
+From Haldi & Mehendi to Sangeet, Wedding and Reception,
 
-Book on WhatsApp
+we transform your dreams into unforgettable celebrations
+
+filled with elegance, tradition and luxury.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#services" class="btn1">
+
+Explore Services
 
 </a>
 
-<a href="https://instagram.com/theckpweddingplanner" class="btn">
+<a href="#contact" class="btn2">
 
-<i class="fab fa-instagram"></i>
+Book Consultation
+
+</a>
+
+</div>
+
+<div class="scroll-down">
+
+&#8595;
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+/*======================
+HERO
+=======================*/
+
+.hero{
+
+position:relative;
+
+width:100%;
+
+min-height:100vh;
+
+/* THIS FIXES THE SCREENSHOT ISSUE */
+padding-top:120px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+overflow:hidden;
+
+background:url("https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1800&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.hero-overlay{
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:linear-gradient(rgba(80,0,20,.72),rgba(30,0,0,.65));
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:2;
+
+max-width:900px;
+
+padding:40px;
+
+}
+
+.welcome{
+
+color:#FFD700;
+
+letter-spacing:5px;
+
+text-transform:uppercase;
+
+font-size:15px;
+
+margin-bottom:20px;
+
+}
+
+.hero-logo{
+
+font-family:'Cinzel',serif;
+
+font-size:78px;
+
+color:white;
+
+letter-spacing:10px;
+
+margin-bottom:10px;
+
+}
+
+.hero-logo .flower{
+
+color:#FFD700;
+
+font-size:45px;
+
+margin:0 15px;
+
+}
+
+.hero-title{
+
+font-family:'Cinzel',serif;
+
+font-size:32px;
+
+color:white;
+
+font-weight:500;
+
+letter-spacing:4px;
+
+margin-bottom:25px;
+
+}
+
+.divider{
+
+width:160px;
+
+height:2px;
+
+background:#D4AF37;
+
+margin:25px auto;
+
+}
+
+.hero-hindi{
+
+font-family:'Tiro Devanagari Hindi',serif;
+
+font-size:34px;
+
+color:#FFD700;
+
+line-height:1.8;
+
+margin-bottom:25px;
+
+}
+
+.hero-text{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#ffffff;
+
+opacity:.95;
+
+margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.btn1{
+
+background:#D4AF37;
+
+color:#7B1023;
+
+padding:16px 38px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.btn1:hover{
+
+background:white;
+
+transform:translateY(-4px);
+
+}
+
+.btn2{
+
+border:2px solid #D4AF37;
+
+padding:16px 38px;
+
+border-radius:50px;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.4s;
+
+}
+
+.btn2:hover{
+
+background:#D4AF37;
+
+color:#7B1023;
+
+}
+
+.scroll-down{
+
+margin-top:70px;
+
+font-size:40px;
+
+color:#FFD700;
+
+animation:jump 2s infinite;
+
+}
+
+@keyframes jump{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(12px);}
+100%{transform:translateY(0);}
+
+}
+
+/*=========================
+MOBILE
+==========================*/
+
+@media(max-width:992px){
+
+.hero{
+
+padding-top:100px;
+
+}
+
+.hero-logo{
+
+font-size:48px;
+
+letter-spacing:4px;
+
+}
+
+.hero-logo .flower{
+
+font-size:30px;
+
+margin:0 8px;
+
+}
+
+.hero-title{
+
+font-size:22px;
+
+letter-spacing:2px;
+
+}
+
+.hero-hindi{
+
+font-size:24px;
+
+}
+
+.hero-text{
+
+font-size:16px;
+
+padding:0 10px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.btn1,.btn2{
+
+width:260px;
+
+text-align:center;
+
+}
+
+}
+
+</style><!-- =========================
+ABOUT SECTION
+========================= -->
+
+<section id="about" class="about">
+
+<div class="section-title">
+
+<h2>About The CKP Wedding Planner</h2>
+
+<div class="gold-line"></div>
+
+</div>
+
+<div class="about-container">
+
+<div class="about-image">
+
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=80" alt="Wedding">
+
+</div>
+
+<div class="about-text">
+
+<h3>Creating Royal Weddings Across India</h3>
+
+<p>
+
+At <strong>The CKP Wedding Planner</strong>, every wedding is a beautiful story waiting to be told. We specialize in luxurious Indian weddings, destination weddings, elegant décor, and unforgettable celebrations. Our passion is to turn your dream wedding into reality while ensuring every detail reflects your traditions, culture, and personality.
+
+</p>
+
+<p>
+
+From your first consultation to the final farewell, we manage everything with creativity, dedication, and perfection.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+SERVICES
+========================= -->
+
+<section id="services" class="services">
+
+<div class="section-title">
+
+<h2>Our Wedding Services</h2>
+
+<div class="gold-line"></div>
+
+</div>
+
+<div class="service-grid">
+
+<div class="service-card">🌼 Haldi Decoration</div>
+
+<div class="service-card">🌸 Mehendi Decoration</div>
+
+<div class="service-card">🎶 Sangeet Planning</div>
+
+<div class="service-card">💍 Wedding Planning</div>
+
+<div class="service-card">👑 Royal Stage Decoration</div>
+
+<div class="service-card">⛩ Mandap Decoration</div>
+
+<div class="service-card">💐 Floral Decoration</div>
+
+<div class="service-card">📸 Photography & Cinematography</div>
+
+<div class="service-card">🎤 DJ & Entertainment</div>
+
+<div class="service-card">🍽 Catering Management</div>
+
+<div class="service-card">🚗 Guest Hospitality</div>
+
+<div class="service-card">✈ Destination Weddings</div>
+
+</div>
+
+</section>
+
+<!-- =========================
+GALLERY
+========================= -->
+
+<section id="gallery" class="gallery">
+
+<div class="section-title">
+
+<h2>Our Wedding Gallery</h2>
+
+<div class="gold-line"></div>
+
+</div>
+
+<div class="gallery-grid">
+
+<img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=700&q=80">
+
+<img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=700&q=80">
+
+<img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=700&q=80">
+
+<img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=700&q=80">
+
+<img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=700&q=80">
+
+<img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=700&q=80">
+
+</div>
+
+</section>
+
+<!-- =========================
+INSTAGRAM
+========================= -->
+
+<section class="instagram">
+
+<h2>Follow Us On Instagram</h2>
+
+<div class="gold-line"></div>
+
+<p>
+
+Scan the QR Code and follow us for our latest wedding décor, events, and beautiful memories.
+
+</p>
+
+<div class="qr-box">
+
+<!-- Replace this image with your uploaded QR code -->
+
+<img src="images/instagram-qr.png" alt="Instagram QR">
+
+<h3>@theckpweddingplanner</h3>
+
+</div>
+
+</section>
+
+<style>
+
+/* SECTION */
+
+section{
+
+padding:90px 8%;
+
+}
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+font-family:'Cinzel',serif;
+
+font-size:38px;
+
+color:#7B1023;
+
+}
+
+.gold-line{
+
+width:90px;
+
+height:3px;
+
+background:#D4AF37;
+
+margin:15px auto;
+
+}
+
+/* ABOUT */
+
+.about-container{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:60px;
+
+align-items:center;
+
+}
+
+.about-image img{
+
+width:100%;
+
+border-radius:15px;
+
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.about-text h3{
+
+font-size:32px;
+
+margin-bottom:20px;
+
+color:#7B1023;
+
+}
+
+.about-text p{
+
+line-height:1.9;
+
+margin-bottom:20px;
+
+}
+
+/* SERVICES */
+
+.services{
+
+background:#fffdf8;
+
+}
+
+.service-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.service-card{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+text-align:center;
+
+font-size:18px;
+
+font-weight:600;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.service-card:hover{
+
+background:#7B1023;
+
+color:white;
+
+transform:translateY(-8px);
+
+}
+
+/* GALLERY */
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:20px;
+
+}
+
+.gallery-grid img{
+
+width:100%;
+
+height:260px;
+
+object-fit:cover;
+
+border-radius:12px;
+
+transition:.4s;
+
+cursor:pointer;
+
+}
+
+.gallery-grid img:hover{
+
+transform:scale(1.05);
+
+}
+
+/* INSTAGRAM */
+
+.instagram{
+
+background:#7B1023;
+
+color:white;
+
+text-align:center;
+
+}
+
+.instagram h2{
+
+font-family:'Cinzel',serif;
+
+font-size:36px;
+
+margin-bottom:15px;
+
+}
+
+.instagram p{
+
+max-width:650px;
+
+margin:auto;
+
+line-height:1.8;
+
+margin-bottom:30px;
+
+}
+
+.qr-box{
+
+display:inline-block;
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+}
+
+.qr-box img{
+
+width:220px;
+
+height:220px;
+
+object-fit:contain;
+
+}
+
+.qr-box h3{
+
+margin-top:20px;
+
+color:#7B1023;
+
+font-size:20px;
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.about-container{
+
+grid-template-columns:1fr;
+
+}
+
+.about-text{
+
+text-align:center;
+
+}
+
+.section-title h2{
+
+font-size:30px;
+
+}
+
+}
+
+</style><!-- =========================
+CONTACT SECTION
+========================= -->
+
+<section id="contact" class="contact">
+
+<div class="section-title">
+
+<h2>Contact Us</h2>
+
+<div class="gold-line"></div>
+
+</div>
+
+<div class="contact-box">
+
+<h3>Shangam Sharma</h3>
+
+<p>Founder | The CKP Wedding Planner</p>
+
+<p class="contact-number">
+
+📞 +91 92343 33971
+
+</p>
+
+<div class="contact-buttons">
+
+<a href="https://wa.me/919234333971" target="_blank" class="whatsapp-btn">
+
+WhatsApp Us
+
+</a>
+
+<a href="https://instagram.com/theckpweddingplanner"
+
+target="_blank"
+
+class="instagram-btn">
 
 Instagram
 
@@ -459,598 +1193,266 @@ Instagram
 
 </div>
 
-</section><!-- ================= ABOUT ================= -->
-
-<section class="section" id="about">
-
-<h2 class="title">About Us</h2>
-
-<p class="subtitle" id="aboutText">
-
-The CKP Wedding Planner is dedicated to making your special occasions unforgettable.
-Every wedding and celebration tells a unique story, and our goal is to bring your vision to life with thoughtful planning, elegant decorations, and affordable services. Whether it's a Wedding, Haldi, Mehendi, Reception, Birthday, or Anniversary, we ensure every event is beautifully planned with attention to every detail.
-
-</p>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fas fa-heart"></i>
-
-<h3>Our Mission</h3>
-
-<p>
-
-To create unforgettable celebrations filled with happiness, elegance, creativity and lasting memories for every family.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fas fa-users"></i>
-
-<h3>Our Promise</h3>
-
-<p>
-
-We treat every celebration as our own and deliver honest service, transparent communication and complete dedication.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fas fa-star"></i>
-
-<h3>Our Vision</h3>
-
-<p>
-
-To become the most trusted and affordable wedding planner in our region through exceptional service and customer satisfaction.
-
-</p>
-
-</div>
-
 </div>
 
 </section>
 
-<!-- ================= SERVICES ================= -->
+<style>
 
-<section class="section" id="services" style="background:#fff8ef;">
+/* CONTACT */
 
-<h2 class="title">Our Services</h2>
+.contact{
 
-<p class="subtitle">
+padding:90px 8%;
 
-From intimate family functions to grand celebrations, we provide complete planning and decoration services tailored to your needs.
+background:#FFF8EF;
 
-</p>
+text-align:center;
 
-<div class="cards">
+}
 
-<div class="card">
+.contact-box{
 
-<i class="fas fa-ring"></i>
+max-width:650px;
 
-<h3>Wedding Planning</h3>
+margin:auto;
 
-<p>
+padding:45px;
 
-Complete wedding planning from engagement to reception with personalized attention.
+background:white;
 
-</p>
+border-radius:20px;
 
-</div>
+box-shadow:0 10px 35px rgba(0,0,0,.08);
 
-<div class="card">
+}
 
-<i class="fas fa-spa"></i>
+.contact-box h3{
 
-<h3>Haldi Decoration</h3>
+font-family:'Cinzel',serif;
 
-<p>
+font-size:34px;
 
-Traditional and floral Haldi themes designed with vibrant colours and creativity.
+color:#7B1023;
 
-</p>
+margin-bottom:10px;
 
-</div>
+}
 
-<div class="card">
+.contact-box p{
 
-<i class="fas fa-leaf"></i>
+font-size:18px;
 
-<h3>Mehendi Setup</h3>
+margin:10px 0;
 
-<p>
+}
 
-Stylish Mehendi décor with colourful seating, backdrops and decorative elements.
+.contact-number{
 
-</p>
+font-weight:bold;
 
-</div>
+font-size:22px;
 
-<div class="card">
+color:#D4AF37;
 
-<i class="fas fa-music"></i>
+}
 
-<h3>Sangeet Night</h3>
+.contact-buttons{
 
-<p>
+display:flex;
 
-Elegant stage setup, lighting arrangements and entertainment planning.
+justify-content:center;
 
-</p>
+gap:20px;
 
-</div>
+margin-top:35px;
 
-<div class="card">
+flex-wrap:wrap;
 
-<i class="fas fa-crown"></i>
+}
 
-<h3>Reception</h3>
+.whatsapp-btn,
 
-<p>
+.instagram-btn{
 
-Beautiful reception stage decoration designed to make your evening unforgettable.
+padding:15px 35px;
 
-</p>
+border-radius:50px;
 
-</div>
+text-decoration:none;
 
-<div class="card">
+font-weight:600;
 
-<i class="fas fa-camera"></i>
+transition:.3s;
 
-<h3>Photography Coordination</h3>
+}
 
-<p>
+.whatsapp-btn{
 
-Professional photography and videography coordination for your special moments.
+background:#25D366;
 
-</p>
+color:white;
 
-</div>
+}
 
-<div class="card">
+.instagram-btn{
 
-<i class="fas fa-birthday-cake"></i>
+background:#7B1023;
 
-<h3>Birthday Events</h3>
+color:white;
 
-<p>
+}
 
-Creative theme decorations for birthdays, baby showers and children's celebrations.
+.whatsapp-btn:hover,
 
-</p>
+.instagram-btn:hover{
 
-</div>
+transform:translateY(-5px);
 
-<div class="card">
+}
 
-<i class="fas fa-glass-cheers"></i>
+/* FLOATING WHATSAPP */
 
-<h3>Anniversary Celebrations</h3>
+.float-whatsapp{
 
-<p>
+position:fixed;
 
-Celebrate your milestones with elegant décor and memorable event planning.
+bottom:25px;
 
-</p>
+right:25px;
 
-</div>
+background:#25D366;
 
-</div>
+color:white;
 
-</section>
+width:65px;
 
-<!-- ================= WHY CHOOSE US ================= -->
+height:65px;
 
-<section class="section">
+border-radius:50%;
 
-<h2 class="title">Why Choose The CKP Wedding Planner?</h2>
+display:flex;
 
-<div class="cards">
+justify-content:center;
 
-<div class="card">
+align-items:center;
 
-<i class="fas fa-handshake"></i>
+font-size:32px;
 
-<h3>Personal Attention</h3>
+text-decoration:none;
 
-<p>
+box-shadow:0 10px 25px rgba(0,0,0,.25);
 
-Every client is like family. We listen carefully to your ideas and make them a reality.
+z-index:999;
 
-</p>
+transition:.3s;
 
-</div>
+}
 
-<div class="card">
+.float-whatsapp:hover{
 
-<i class="fas fa-wallet"></i>
+transform:scale(1.1);
 
-<h3>Affordable Pricing</h3>
+}
 
-<p>
+/* FOOTER */
 
-Beautiful decorations and professional planning that suit your budget.
+footer{
 
-</p>
+background:#7B1023;
 
-</div>
+color:white;
 
-<div class="card">
+text-align:center;
 
-<i class="fas fa-clock"></i>
+padding:35px 20px;
 
-<h3>On-Time Execution</h3>
+}
 
-<p>
+footer h3{
 
-We value your time and ensure every event is prepared and executed on schedule.
+font-family:'Cinzel',serif;
 
-</p>
+letter-spacing:2px;
 
-</div>
+margin-bottom:10px;
 
-<div class="card">
+}
 
-<i class="fas fa-palette"></i>
+footer p{
 
-<h3>Creative Designs</h3>
+margin:6px 0;
 
-<p>
+}
 
-Fresh ideas, elegant themes and beautiful decorations for every celebration.
+</style>
 
-</p>
-
-</div>
-
-</div>
-
-</section><!-- ================= GALLERY ================= -->
-
-<section class="section" id="gallery" style="background:#fffdf8;">
-
-<h2 class="title">Our Inspiration</h2>
-
-<p class="subtitle">
-
-Every beautiful celebration begins with a dream. As we begin our journey, our inspiration comes from creating elegant, joyful and memorable events that reflect each family's unique story.
-
-</p>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fas fa-seedling"></i>
-
-<h3>Wedding Decorations</h3>
-
-<p>
-
-Elegant floral themes, mandap decoration and entrance designs inspired by Indian weddings.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fas fa-champagne-glasses"></i>
-
-<h3>Reception Setup</h3>
-
-<p>
-
-Stylish stage decoration, lighting arrangements and beautiful reception ambience.
-
-</p>
-
-</div>
-
-<div class="card">
-
-<i class="fas fa-gifts"></i>
-
-<h3>Special Celebrations</h3>
-
-<p>
-
-Creative decoration ideas for birthdays, anniversaries, engagements and family functions.
-
-</p>
-
-</div>
-
-</div>
-
-<br><br>
-
-<p style="text-align:center;font-style:italic;color:#777;">
-
-📸 Our event gallery will be updated soon as we begin creating unforgettable memories with our wonderful clients.
-
-</p>
-
-</section>
-
-<!-- ================= CONTACT ================= -->
-
-<section class="section" id="contact" style="background:#5b0f17;color:white;">
-
-<h2 class="title" style="color:#FFD700;">
-
-Contact Us
-
-</h2>
-
-<p class="subtitle" style="color:white;">
-
-Planning a celebration?
-
-We'd love to hear your ideas and help make your special occasion truly memorable.
-
-</p>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fas fa-phone" style="color:#5b0f17;"></i>
-
-<h3>Call Us</h3>
-
-<p>
-
-+91 92343 33971
-
-</p>
-
-<br>
-
-<a href="tel:+919234333971" class="btn">
-
-Call Now
-
-</a>
-
-</div>
-
-<div class="card">
-
-<i class="fab fa-whatsapp" style="color:#25D366;"></i>
-
-<h3>WhatsApp</h3>
-
-<p>
-
-Quick enquiries and bookings.
-
-</p>
-
-<br>
+<!-- FLOATING WHATSAPP -->
 
 <a href="https://wa.me/919234333971"
 
-class="btn"
+target="_blank"
 
-target="_blank">
+class="float-whatsapp">
 
-Message Now
-
-</a>
-
-</div>
-
-<div class="card">
-
-<i class="fab fa-instagram" style="color:#E1306C;"></i>
-
-<h3>Instagram</h3>
-
-<p>
-
-@theckpweddingplanner
-
-</p>
-
-<br>
-
-<a href="https://instagram.com/theckpweddingplanner"
-
-class="btn"
-
-target="_blank">
-
-Visit Instagram
+💬
 
 </a>
 
-</div>
+<!-- FOOTER -->
 
-</div>
+<footer>
 
-<br><br>
+<h3>The CKP Wedding Planner</h3>
 
-<div style="text-align:center;">
+<p>Creating Beautiful Weddings, One Celebration at a Time.</p>
 
-<h3>📍 Business Address</h3>
+<p>📞 +91 92343 33971</p>
 
-<p>
+<p>Instagram: @theckpweddingplanner</p>
 
-RLY Colony<br>
+<p>&copy; 2026 The CKP Wedding Planner. All Rights Reserved.</p>
 
-Near Mahatma Gandhi Park<br>
+</footer>
 
-CKP
+<script>
 
-</p>
+/* MOBILE MENU */
 
-<br>
+function openMenu(){
 
-<p>
-
-📧 sharmashangam96@gmail.com
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ================= FLOATING WHATSAPP ================= -->
-
-<a href="https://wa.me/919234333971"
-
-class="whatsapp"
-
-target="_blank">
-
-<i class="fab fa-whatsapp"></i>
-
-</a>
-
-<!-- ================= FOOTER ================= -->
-
-<footer style="background:#3c0910;color:white;text-align:center;padding:40px 20px;">
-
-<h2 style="font-family:Cinzel;color:#FFD700;">
-
-🪷 THE CKP Wedding Planner 🪷
-
-</h2>
-
-<p style="margin-top:10px;font-size:18px;">
-
-मुस्कुराहटें आपकी, सजावटें हमारी
-
-</p>
-
-<br>
-
-<p>
-
-Creating memorable weddings and celebrations with love, creativity and care.
-
-</p>
-
-<br>
-
-<p>
-
-© 2026 The CKP Wedding Planner
-
-</p>
-
-<p>
-
-Designed with ❤️ to celebrate life's most beautiful moments.
-
-</p>
-
-</footer><script>
-
-// ================= LANGUAGE TOGGLE =================
-
-let hindi = false;
-
-function changeLang(){
-
-hindi = !hindi;
-
-if(hindi){
-
-document.getElementById("heroTitle").innerHTML =
-"द CKP वेडिंग प्लानर";
-
-document.getElementById("tagline").innerHTML =
-"मुस्कुराहटें आपकी, सजावटें हमारी";
-
-document.getElementById("heroText").innerHTML =
-"प्यार, रचनात्मकता और समर्पण के साथ हम आपकी शादी और हर विशेष समारोह को यादगार बनाते हैं। हल्दी से लेकर रिसेप्शन तक, हम हर पल को खूबसूरती से सजाते हैं—बेहतरीन योजना और किफायती बजट के साथ।";
-
-document.getElementById("aboutText").innerHTML =
-"द CKP वेडिंग प्लानर आपकी खुशियों को यादगार बनाने के लिए समर्पित है। शादी, हल्दी, मेहंदी, संगीत, रिसेप्शन, जन्मदिन और सालगिरह जैसे हर खास अवसर को हम पूरी लगन, रचनात्मकता और किफायती बजट के साथ खूबसूरती से सजाते हैं।";
-
-}else{
-
-document.getElementById("heroTitle").innerHTML =
-"The CKP Wedding Planner";
-
-document.getElementById("tagline").innerHTML =
-"मुस्कुराहटें आपकी, सजावटें हमारी";
-
-document.getElementById("heroText").innerHTML =
-"Creating memorable weddings and celebrations with love, creativity and care. From Haldi to Reception, we make every moment beautiful—beautifully planned and affordably priced.";
-
-document.getElementById("aboutText").innerHTML =
-"The CKP Wedding Planner is dedicated to making your special occasions unforgettable. Every wedding and celebration tells a unique story, and our goal is to bring your vision to life with thoughtful planning, elegant decorations, and affordable services. Whether it's a Wedding, Haldi, Mehendi, Reception, Birthday, or Anniversary, we ensure every event is beautifully planned with attention to every detail.";
+document.getElementById("mobileMenu").classList.toggle("active");
 
 }
 
-}
+/* LANGUAGE SWITCH */
 
-// ================= CARD ANIMATION =================
+document.getElementById("englishBtn").onclick=function(){
 
-const observer = new IntersectionObserver(entries=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting){
-
-entry.target.style.opacity="1";
-
-entry.target.style.transform="translateY(0)";
+alert("English Version Selected");
 
 }
 
-});
+document.getElementById("hindiBtn").onclick=function(){
 
-});
-
-document.querySelectorAll(".card").forEach(card=>{
-
-card.style.opacity="0";
-
-card.style.transform="translateY(40px)";
-
-card.style.transition="all .8s ease";
-
-observer.observe(card);
-
-});
-
-// ================= STICKY HEADER EFFECT =================
-
-window.addEventListener("scroll",()=>{
-
-const header=document.querySelector("header");
-
-if(window.scrollY>50){
-
-header.style.background="#5b0f17";
-header.style.boxShadow="0 10px 25px rgba(0,0,0,.35)";
-
-}else{
-
-header.style.background="linear-gradient(135deg,#5b0f17,#8b1e2d)";
-header.style.boxShadow="0 5px 15px rgba(0,0,0,.25)";
+alert("हिन्दी संस्करण जल्द उपलब्ध होगा।");
 
 }
 
-});
+document.getElementById("mobileEnglish").onclick=function(){
+
+alert("English Version Selected");
+
+}
+
+document.getElementById("mobileHindi").onclick=function(){
+
+alert("हिन्दी संस्करण जल्द उपलब्ध होगा।");
+
+}
 
 </script>
 
 </body>
+
 </html>
